@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Danae Serech</title>
+    <link rel="icon" type="image/png" href="recursos/img/Logo azul.png">
+    <style>
+        /*CSS-Diseño, configurar en cascada (Esto si es un lenguaje de progra)*/
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: rgb(244, 64, 154);
+        }
+        h1{color: white;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #bc13fe,
+                0 0 20px #bc13fe,
+                0 0 40px #bc13fe;
+            text-align: center;}
+        main{
+            flex: 1;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid black;
+            background-color: blue;
+        }
+        /* EL NUEVO CÓDIGO VA EN ESTE ESPACIO EN BLANCO */
+        .logo-colegio {
+            transition: transform 0.3s ease;
+        }
+        .logo-colegio:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        /* AQUÍ ESTÁ EL DISEÑO DE LAS SEMANAS */
+        .semana {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            color: black;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera unidad</h1>
+    </header>
+    <main>
+        <h4>Contenido de la página WEB</h4>
+        <div class="semana">
+            <h4>Semana 1:</h4>
+            <p>Introducción Arduino</p>
+            <iframe src="recursos/pdf/Introducción Arduino Danae.pdf" width="100%" height="500px">
+                <p>Tu navegador no soporta ver el PDF. <a href="recursos/pdf/Introducción Arduino Danae.pdf" target="_blank">Haz clic aquí para abrirlo.</a></p>
+            </iframe>
+        </div>
+        <div class="semana">
+            <h4>Semana 2: Funcionamiento de Arduino</h4>
+            <p>En esta semana grabé el video de mi circuito en acción.</p>
+    
+            <iframe width="100%" height="400" src="recursos/videos/Circuito uno.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <span>@Danae08</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"class="logo-colegio" height="25" width="300">
+    </footer>
+</body>
+</html>
